@@ -4,12 +4,36 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+[![License][license-shield]][license-url]
 
+# Kokoro TTS for ROS
 
-> [!WARNING]
-> 本リポジトリはサポートされて間もないため，今後も頻繁に大きく改良される可能性があります．
+<!-- 目次 -->
+<details>
+  <summary>目次</summary>
+  <ol>
+    <li>
+      <a href="#概要">概要</a>
+    </li>
+    <li>
+      <a href="#環境構築">環境構築</a>
+      <ul>
+        <li><a href="#環境条件">環境条件</a></li>
+        <li><a href="#インストール方法">インストール方法</a></li>          
+      </ul>
+    </li>
+    <li><a href="#実行操作方法">実行・操作方法</a></li>
+    <li><a href="#対応言語">対応言語</a></li>
+    <li><a href="#話者">話者</a></li>
+    <li><a href="#発話速度">発話速度</a></li>
+    <li><a href="#区切る文字">区切る文字</a></li>
+    <li><a href="#マイルストーン">マイルストーン</a></li>
+    <!-- <li><a href="#contributing">Contributing</a></li> -->
+    <!-- <li><a href="#license">License</a></li> -->
+    <li><a href="#参考文献">参考文献</a></li>
+  </ol>
+</details>
 
-# kokoro_tts_ros
 
 <!-- レポジトリの概要 -->
 ## 概要
@@ -19,9 +43,11 @@ Kokoroは，8,200万のパラメータを持つオープンウェイトのTTS（
 
 <p align="right">(<a href="#readme-top">上に戻る</a>)</p>
 
-<!-- セットアップ -->
-## セットアップ
+<!-- 環境構築 -->
+## 環境構築
 ここで，本レポジトリのセットアップ方法について説明します．
+
+<p align="right">(<a href="#readme-top">上に戻る</a>)</p>
 
 ### 環境条件
 
@@ -31,6 +57,8 @@ Kokoroは，8,200万のパラメータを持つオープンウェイトのTTS（
 | Ubuntu | 22.04 (Jammy Jellyfish) |
 | ROS    | Humble Hawksbill |
 | Python | 3.10 |
+
+<p align="right">(<a href="#readme-top">上に戻る</a>)</p>
 
 ### インストール方法
 1. ROS2の`src`フォルダに移動します．
@@ -148,11 +176,16 @@ DeclareLaunchArgument(
 ),
 ```
 
-## 参考
-https://huggingface.co/hexgrad/Kokoro-82M
+<!-- マイルストーン -->
+## マイルストーン
+現時点のbugや新規機能の依頼を確認するために[Issueページ][issues-url] をご覧ください．
 
-## ライセンス
-このプロジェクトは[kokoro](https://github.com/hexgrad/kokoro)のフォークであり，Apache License 2.0の下でライセンスされています．
+<p align="right">(<a href="#readme-top">上に戻る</a>)</p>
+
+<!-- 参考文献 -->
+## 参考文献
+[Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)
+<p align="right">(<a href="#readme-top">上に戻る</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -164,3 +197,5 @@ https://huggingface.co/hexgrad/Kokoro-82M
 [stars-url]: https://github.com/TeamSOBITS/kokoro_tts_ros/stargazers
 [issues-shield]: https://img.shields.io/github/issues/TeamSOBITS/kokoro_tts_ros.svg?style=for-the-badge
 [issues-url]: https://github.com/TeamSOBITS/kokoro_tts_ros/issues
+[license-shield]: https://img.shields.io/github/license/TeamSOBITS/kokoro_tts_ros.svg?style=for-the-badge
+[license-url]: LICENSE
